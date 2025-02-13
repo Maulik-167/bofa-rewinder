@@ -1,0 +1,16 @@
+.dropdown-menu {
+    width: 50%;
+}
+
+.fixed-height-card {
+    height: 200px;
+    /* Set your fixed height */
+}
+
+.modal-dialog-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove margin */
+  }

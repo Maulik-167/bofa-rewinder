@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <h4 class="modal-title pull-left">{{ title }}</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+        <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <carousel [interval]="myInterval" [(activeSlide)]="activeSlideIndex">
+        <slide *ngFor="let slide of slides; let index=index">
+            <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+
+            <div class="carousel-caption">
+                <h4>Slide {{index}}</h4>
+                <p>{{slide.text}}</p>
+            </div>
+        </slide>
+    </carousel>
+    <br />
+
+</div>
+<div class="modal-footer">
+    <!-- <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{ closeBtnName }}</button> -->
+</div>
