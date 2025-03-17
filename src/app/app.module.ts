@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CreateTemplateComponent } from './create-template/create-template.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -20,8 +21,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     AppComponent,
     HeaderComponent,
     DashboardComponent,
+    CreateTemplateComponent,
     FooterComponent,
-    PreviewComponent
+    PreviewComponent,
   ],
   imports: [
     BrowserModule,

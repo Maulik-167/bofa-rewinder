@@ -1,3 +1,96 @@
-.navbar-brand img {
-    margin-right: 10px;
+.bg {
+    width: 1600px;
+    height: 111px;
+    position: static;
+}
+
+.header {
+    width: 292px;
+    height: 24px;
+    position: static;
+}
+
+.menu {
+    width: 292px;
+    height: 24px;
+    position: static;
+}
+
+.templates {
+    color: var(--gray-900, #18181b);
+    text-align: left;
+    font-family: var(--semi-bold-16px-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--semi-bold-16px-font-size, 16px);
+    line-height: var(--semi-bold-16px-line-height, 24px);
+    font-weight: var(--semi-bold-16px-font-weight, 600);
+    position: absolute;
+    left: 70%;
+    top: 44px;
+}
+
+.features {
+    color: var(--gray-900, #18181b);
+    text-align: left;
+    font-family: var(--semi-bold-16px-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--semi-bold-16px-font-size, 16px);
+    line-height: var(--semi-bold-16px-line-height, 24px);
+    font-weight: var(--semi-bold-16px-font-weight, 600);
+    position: absolute;
+    left: 76%;
+    top: 44px;
+}
+
+.support {
+    color: var(--gray-900, #18181b);
+    text-align: left;
+    font-family: var(--semi-bold-16px-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--semi-bold-16px-font-size, 16px);
+    line-height: var(--semi-bold-16px-line-height, 24px);
+    font-weight: var(--semi-bold-16px-font-weight, 600);
+    position: absolute;
+    left: 82%;
+    top: 44px;
+}
+
+.assets-images-global-logos-bac-logo-v-2-csx-3648-cbbb-1 {
+    width: 228px;
+    height: 22.83px;
+    position: absolute;
+    left: 108px;
+    top: 39px;
+    overflow: visible;
+}
+
+.group-17 {
+    width: 122px;
+    height: 32px;
+    position: static;
+}
+
+.avatar {
+    background: var(--avatar-user-square-olivia-rhye, undefined);
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 88%;
+    top: 40px;
+    object-fit: cover;
+}
+
+.text {
+    text-align: left;
+    font-family: "-", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 90%;
+    top: 46px;
+    width: 78px;
 }

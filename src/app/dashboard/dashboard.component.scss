@@ -11,6 +11,335 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove margin */
-  }
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+    /* Remove margin */
+}
+
+
+
+
+.mac-book-air-1,
+.mac-book-air-1 * {
+    box-sizing: border-box;
+}
+
+.mac-book-air-1 {
+    background: #ffffff;
+    height: 996px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-4 {
+    position: absolute;
+    inset: 0;
+}
+
+.bg {
+    width: 1600px;
+    height: 111px;
+    position: static;
+}
+
+.bg2 {
+    background: #ffffff;
+    width: 1600px;
+    height: 111px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.header {
+    width: 292px;
+    height: 24px;
+    position: static;
+}
+
+.menu {
+    width: 292px;
+    height: 24px;
+    position: static;
+}
+
+.templates {
+    color: var(--gray-900, #18181b);
+    text-align: left;
+    font-family: var(--semi-bold-16px-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--semi-bold-16px-font-size, 16px);
+    line-height: var(--semi-bold-16px-line-height, 24px);
+    font-weight: var(--semi-bold-16px-font-weight, 600);
+    position: absolute;
+    left: 70%;
+    top: 44px;
+}
+
+.features {
+    color: var(--gray-900, #18181b);
+    text-align: left;
+    font-family: var(--semi-bold-16px-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--semi-bold-16px-font-size, 16px);
+    line-height: var(--semi-bold-16px-line-height, 24px);
+    font-weight: var(--semi-bold-16px-font-weight, 600);
+    position: absolute;
+    left: 76%;
+    top: 44px;
+}
+
+.support {
+    color: var(--gray-900, #18181b);
+    text-align: left;
+    font-family: var(--semi-bold-16px-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--semi-bold-16px-font-size, 16px);
+    line-height: var(--semi-bold-16px-line-height, 24px);
+    font-weight: var(--semi-bold-16px-font-weight, 600);
+    position: absolute;
+    left: 82%;
+    top: 44px;
+}
+
+.assets-images-global-logos-bac-logo-v-2-csx-3648-cbbb-1 {
+    width: 228px;
+    height: 22.83px;
+    position: absolute;
+    left: 108px;
+    top: 39px;
+    overflow: visible;
+}
+
+.group-17 {
+    width: 122px;
+    height: 32px;
+    position: static;
+}
+
+.avatar {
+    background: var(--avatar-user-square-olivia-rhye, undefined);
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 88%;
+    top: 40px;
+    object-fit: cover;
+}
+
+.text {
+    text-align: left;
+    font-family: "-", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 90%;
+    top: 46px;
+    width: 78px;
+}
+
+.text-span {
+    color: var(--gray-700, #344054);
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.text-span2 {
+    color: var(--gray-700, #344054);
+    font-family: var(--text-sm-medium-font-family, "Inter-Medium", sans-serif);
+    font-size: var(--text-sm-medium-font-size, 14px);
+    line-height: var(--text-sm-medium-line-height, 20px);
+    font-weight: var(--text-sm-medium-font-weight, 500);
+}
+
+.text-span3 {
+    color: var(--gray-700, #344054);
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.text-span4 {
+    color: var(--gray-500, #667085);
+    font-family: var(--text-sm-normal-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--text-sm-normal-font-size, 14px);
+    line-height: var(--text-sm-normal-line-height, 20px);
+    font-weight: var(--text-sm-normal-font-weight, 400);
+}
+
+.group-19 {
+    position: absolute;
+    inset: 0;
+}
+
+.group-18 {
+    width: 1223px;
+    height: 183px;
+    position: static;
+}
+
+.rectangle-68 {
+    background: #ffffff;
+    width: 277.87px;
+    height: 183px;
+    position: absolute;
+    left: 109px;
+    top: 173px;
+    cursor: pointer;
+}
+
+.rectangle-69 {
+    background: #ffffff;
+    width: 277.87px;
+    height: 183px;
+    position: absolute;
+    left: 424.04px;
+    top: 173px;
+    cursor: pointer;
+}
+
+.hugeicons-view {
+    width: 34.47px;
+    height: 34.47px;
+    position: absolute;
+    left: 463.5px;
+    top: 230.88px;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.group {
+    width: 83.33%;
+    height: 58.33%;
+    position: absolute;
+    right: 8.33%;
+    left: 8.33%;
+    bottom: 20.83%;
+    top: 20.83%;
+    overflow: visible;
+}
+
+.rectangle-70 {
+    background: #ffffff;
+    width: 277.87px;
+    height: 183px;
+    position: absolute;
+    left: 739.09px;
+    top: 173px;
+    cursor: pointer;
+}
+
+.rectangle-71 {
+    background: #ffffff;
+    width: 277.87px;
+    height: 183px;
+    position: absolute;
+    left: 1054.13px;
+    top: 173px;
+    cursor: pointer;
+}
+
+.new {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 141.53px;
+    top: 273.78px;
+    width: 43px;
+    height: 19px;
+}
+
+.view-sent {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 463px;
+    top: 273px;
+    width: 93px;
+    height: 19px;
+}
+
+.view-draft {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 786px;
+    top: 274px;
+    width: 98px;
+    height: 19px;
+}
+
+.analysis {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 1099px;
+    top: 274px;
+    width: 79px;
+    height: 19px;
+}
+
+.material-symbols-add-rounded {
+    width: 40.5px;
+    height: 40.5px;
+    position: absolute;
+    left: 133.82px;
+    top: 225.87px;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.material-symbols-light-draft-outline {
+    width: 31.89px;
+    height: 31.89px;
+    position: absolute;
+    left: 779.37px;
+    top: 226.98px;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.solar-graph-linear {
+    width: 29.3px;
+    height: 29.3px;
+    position: absolute;
+    left: 1096.17px;
+    top: 227.07px;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.group2 {
+    width: 83.33%;
+    height: 83.33%;
+    position: absolute;
+    right: 8.33%;
+    left: 8.33%;
+    bottom: 8.33%;
+    top: 8.33%;
+    overflow: visible;
+}
