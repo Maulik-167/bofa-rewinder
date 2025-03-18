@@ -1,6 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { PreviewComponent } from '../preview/preview.component';
 import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
+import { Router } from '@angular/router';
+import { TemplateService } from '../template.service';
 
 
 @Component({
@@ -13,6 +15,7 @@ export class CreateTemplateComponent {
   bsModalRef?: BsModalRef;
   @ViewChild('searchInput') searchInput!: ElementRef;
   selectedClient: any;
+  isChooseLanguage = false;
   filteredClients: Array<{ id: number, name: string }> = [];
   clients = [
     { id: 1, name: 'John Doe', country: 'US', industry: 'Ind1' },
@@ -22,31 +25,31 @@ export class CreateTemplateComponent {
 
   tagesInfo = [
     {
-      title: "Number of calls",
+      title: "Number Of Calls",
       count: '05',
       tagName: 'Engagement'
     },
     {
-      title: "Number of events",
-      count: '05',
+      title: "Number Of Events",
+      count: '10',
       tagName: 'Engagement'
     },
     {
-      title: "Number of calls",
-      count: '05',
+      title: "Total Client Meeting Held",
+      count: '160',
       tagName: 'Engagement'
     },
     {
-      title: "Number of events",
-      count: '05',
+      title: "Events Invited To",
+      count: '250',
       tagName: 'Engagement'
     }
-    
+
   ];
 
-  
 
-  constructor(private modalService: BsModalService) {
+
+  constructor(private modalService: BsModalService, private router: Router, private templateService : TemplateService) {
 
   }
 
@@ -74,9 +77,12 @@ export class CreateTemplateComponent {
   onClientSelect(client: any) {
     this.selectedClient = client;// Optionally set the search box to the selected client name
     this.filteredClients = [];
-    debugger
   }
 
 
-  
+  chooseLanguage() {
+    this.router.navigateByUrl('/create-template');
+    this.templateService.selectedPage = 'choose-language';
+  }
+
 }

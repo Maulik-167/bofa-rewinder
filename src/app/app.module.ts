@@ -15,6 +15,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PreviewComponent } from './preview/preview.component';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { TemplateService } from './template.service';
+import { CreateWorkflowComponent } from './create-workflow/create-workflow.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     CreateTemplateComponent,
     FooterComponent,
     PreviewComponent,
+    CreateWorkflowComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     CarouselModule.forRoot(),
     // TypeaheadModule.forRoot()
   ],
-  providers: [BsModalService],
+  providers: [BsModalService, TemplateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

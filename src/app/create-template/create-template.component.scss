@@ -1432,4 +1432,80 @@
     top: 346px;
 }
 
+.primary-button-with-icon-left {
+    background: rgba(160, 171, 187, 0.77);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 40px;
+    position: absolute;
+    left: 1055px;
+    top: 881px;
+}
 
+
+.frame-12 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 126px;
+    position: relative;
+}
+
+.button-name4 {
+    color: #ffffff;
+    text-align: right;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.button-background {
+    background: #2759a2;
+    border-radius: 10px;
+    width: 166px;
+    height: 40px;
+    position: absolute;
+    left: 1160px;
+    top: 881px;
+}
+
+.arrow-icon {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    left: 1309px;
+    top: 912px;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.choose-language {
+    color: #ffffff;
+    text-align: right;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 700;
+    position: absolute;
+    left: 1176px;
+    top: 890px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

@@ -94,3 +94,105 @@
     top: 46px;
     width: 78px;
 }
+
+
+.tag-title{    
+    color: #a1a1aa;
+    text-align: left;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 115px;
+    top: 120px;
+    width: 156px;
+    &.active {
+        color: var(--neutral-800, #191d23);
+    }
+}
+
+.progress-step-label {
+    color: #a1a1aa;
+    text-align: left;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 371px;
+    top: 120px;
+    width: 142px;
+    &.active {
+        color: var(--neutral-800, #191d23);
+    }
+}
+
+.progress-step-label2 {
+    color: #a1a1aa;
+    text-align: left;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 611px;
+    top: 120px;
+    width: 73px;
+    &.active {
+        color: var(--neutral-800, #191d23);
+    }
+}
+
+.progress-step-label3 {
+    color: #a1a1aa;
+    text-align: left;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 783px;
+    top: 120px;
+    width: 73px;
+}
+
+.progress-step-label4 {
+    color: #a1a1aa;
+    text-align: left;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 955px;
+    top: 120px;
+    width: 73px;
+}
+
+.progress-indicator {
+    height: auto;
+    position: absolute;
+    left: 282px;
+    top: 120px;
+    overflow: visible;
+}
+
+.progress-indicator2 {
+    height: auto;
+    position: absolute;
+    left: 520px;
+    top: 120px;
+    overflow: visible;
+}
+
+.progress-indicator3 {
+    height: auto;
+    position: absolute;
+    left: 691px;
+    top: 120px;
+    overflow: visible;
+}
+
+.progress-indicator4 {
+    height: auto;
+    position: absolute;
+    left: 862px;
+    top: 120px;
+    overflow: visible;
+}

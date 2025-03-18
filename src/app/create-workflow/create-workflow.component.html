@@ -1,0 +1,467 @@
+<div class="mac-book-air-3">
+    <div *ngIf="selectedIndex === 0">
+        <div class="label">To</div>
+        <div class="bar">
+            <div class="recipient-name">Hi, Alexender</div>
+        </div>
+    </div>
+    <app-header></app-header>
+    <div class="member pointer" [ngClass]="{'active': selectedIndex === 0}" (click)="selectedIndex = 0">
+        <div class="name">
+            <div class="full-name">Intro 1</div>
+        </div>
+        <img class="close-icon2" src="close-icon1.svg" />
+    </div>
+    <div class="member2 pointer" [ngClass]="{'active': selectedIndex === 1}" (click)="selectedIndex = 1">
+        <div class="name">
+            <div class="full-name">Intro 2</div>
+        </div>
+        <img class="close-icon3" src="close-icon2.svg" />
+    </div>
+    <div class="member3 pointer" [ngClass]="{'active': selectedIndex === 2}" (click)="selectedIndex = 2">
+        <div class="name">
+            <div class="full-name">Intro 3</div>
+        </div>
+        <img class="close-icon4" src="close-icon3.svg" />
+    </div>
+    <div class="member4 pointer" [ngClass]="{'active': selectedIndex === 3}" (click)="selectedIndex = 3">
+        <div class="name">
+            <div class="full-name">Number Of Calls</div>
+        </div>
+        <img class="close-icon5" src="close-icon4.svg" />
+    </div>
+    <div class="member5 pointer" [ngClass]="{'active': selectedIndex === 4}" (click)="selectedIndex = 4">
+        <div class="name">
+            <div class="full-name">Total Client Meeting Held</div>
+        </div>
+        <img class="close-icon6" src="close-icon5.svg" />
+    </div>
+    <div class="member6 pointer" [ngClass]="{'active': selectedIndex === 5}" (click)="selectedIndex = 5">
+        <div class="name">
+            <div class="full-name">Events Invited To</div>
+        </div>
+        <img class="close-icon7" src="close-icon6.svg" />
+    </div>
+    <div class="member7 pointer" [ngClass]="{'active': selectedIndex === 6}" (click)="selectedIndex = 6">
+        <div class="name">
+            <div class="full-name">Closing 1</div>
+        </div>
+        <img class="close-icon8" src="close-icon7.svg" />
+    </div>
+    <div class="member8 pointer" [ngClass]="{'active': selectedIndex === 7}" (click)="selectedIndex = 7">
+        <div class="name">
+            <div class="full-name">Closing 2</div>
+        </div>
+        <img class="close-icon9" src="close-icon8.svg" />
+    </div>
+    <div class="line-47"></div>
+    <div class="primary-button-with-icon-left pointer" [ngClass]="{'active': selectedIndex !== 0}" (click)="gotoPrev()">
+        <div class="frame-1">
+            <div class="button-name">Previous</div>
+        </div>
+    </div>
+    <div class="button-background"></div>
+    <img class="arrow-icon" src="arrow-icon0.svg" />
+    <div class="button-text pointer" (click)="gotoNext()">Next</div>
+    <div *ngIf="selectedIndex === 1">
+        <div class="pop-up-2">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-3">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-4">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <label class="font-weight-bold" style="
+        padding: 16px;
+        font-weight: bold;
+        
+        position: absolute;
+        left: 720px;
+        top: 490px;"> OR </label>
+
+        <form style="border-radius: 4px;
+        padding: 16px;
+        display: flex
+    ;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        left: 400px;
+        top: 520px;">
+            <div class="form-group row" style="width: 600px;">
+                <label for="inputPassword" class="col-sm-3 col-form-label">Custom Message</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="selectedIndex === 2">
+        <div class="pop-up-2">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-3">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-4">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+
+        <label class="font-weight-bold" style="
+        padding: 16px;
+        font-weight: bold;
+        
+        position: absolute;
+        left: 720px;
+        top: 490px;"> OR </label>
+
+        <form style="border-radius: 4px;
+        padding: 16px;
+        display: flex
+    ;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        left: 400px;
+        top: 520px;">
+            <div class="form-group row" style="width: 600px;">
+                <label for="inputPassword" class="col-sm-3 col-form-label">Custom Message</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div *ngIf="selectedIndex === 3">
+        <div class="pop-up-2">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-3">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-4">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+
+        <form style="border-radius: 4px;
+        padding: 16px;
+        display: flex
+    ;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 275px;
+        position: absolute;
+        left: 400px;
+        top: 504px;">
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-8 col-form-label">Self Source Value For Number Of Calls</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="value" placeholder="Password" value="5">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="selectedIndex === 4">
+        <div class="pop-up-2">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-3">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-4">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <form style="border-radius: 4px;
+        padding: 16px;
+        display: flex
+    ;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 275px;
+        position: absolute;
+        left: 400px;
+        top: 504px;">
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-8 col-form-label">Self Source Value For Total Client Meeting
+                    Held</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="value" placeholder="Password" value="160">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="selectedIndex === 5">
+        <div class="pop-up-2">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-3">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-4">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <form style="border-radius: 4px;
+        padding: 16px;
+        display: flex
+    ;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 275px;
+        position: absolute;
+        left: 400px;
+        top: 504px;">
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-8 col-form-label">Self Source Value For Events Invited
+                    To</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="value" placeholder="Password" value="250">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="selectedIndex === 6">
+        <div class="pop-up-2">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-3">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-4">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="selectedIndex === 7">
+        <div class="pop-up-2">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-3">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-4">
+            <div class="heading">
+                <div class="title">Lorem ipsum</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
+            </div>
+            <div class="paragraph">
+                <div class="text">
+                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

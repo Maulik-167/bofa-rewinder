@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CreateTemplateComponent } from './create-template/create-template.component';
+import { CreateWorkflowComponent } from './create-workflow/create-workflow.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'new',
     component: CreateTemplateComponent
+  },
+  {
+    path: 'create-template',
+    component: CreateWorkflowComponent
   }
 ];
 

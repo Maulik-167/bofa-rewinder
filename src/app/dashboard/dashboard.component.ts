@@ -1,8 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { Observable } from 'rxjs';
-import { debounceTime, switchMap } from 'rxjs/operators';
-import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
-import { PreviewComponent } from '../preview/preview.component';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 

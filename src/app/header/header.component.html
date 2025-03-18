@@ -8,8 +8,8 @@
         <div class="support">Support</div>
     </div>
 </div>
-<img class="assets-images-global-logos-bac-logo-v-2-csx-3648-cbbb-1"
-    src="assets/assets-images-global-logos-bac-logo-v2-CSX3648cbbb 1.svg" />
+<img class="assets-images-global-logos-bac-logo-v-2-csx-3648-cbbb-1" (click)="redirectToHome()"
+    src="assets/assets-images-global-logos-bac-logo-v2-CSX3648cbbb 1.svg" style="cursor: pointer;"/>
 <div class="group-17">
     <img class="avatar" src="assets/Avatar.svg" />
     <div class="text">
@@ -21,3 +21,14 @@
         </span>
     </div>
 </div>
+
+
+<div class="tag-title" [ngClass]="{'active': templateService.selectedPage === 'client-Search'}">Choose Client &amp; KPI</div>
+<div class="progress-step-label" [ngClass]="{'active': templateService.selectedPage === 'choose-language'}">Choose language</div>
+<div class="progress-step-label2" [ngClass]="{'active': templateService.selectedPage === 'theme'}">Theme</div>
+<div class="progress-step-label3" [ngClass]="{'active': templateService.selectedPage === 'preview'}">Preview</div>
+<div class="progress-step-label4" [ngClass]="{'active': templateService.selectedPage === 'send'}">Send</div>
+<img class="progress-indicator" src="progress-indicator0.svg" />
+<img class="progress-indicator2" src="progress-indicator1.svg" />
+<img class="progress-indicator3" src="progress-indicator2.svg" />
+<img class="progress-indicator4" src="progress-indicator3.svg" />
