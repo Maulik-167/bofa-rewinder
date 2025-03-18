@@ -62,7 +62,7 @@
     </div>
     <div class="button-background"></div>
     <img class="arrow-icon" src="arrow-icon0.svg" />
-    <div class="button-text pointer" (click)="gotoNext()">Next</div>
+    <div class="button-text pointer" (click)="gotoNext()">{{buttonText}}</div>
     <div *ngIf="selectedIndex === 1">
         <div class="pop-up-2">
             <div class="heading">

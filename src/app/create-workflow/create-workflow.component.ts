@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 })
 export class CreateWorkflowComponent {
   selectedIndex = 0;
+  buttonText = 'Next';
 
   gotoNext() {
+    this.buttonText = this.selectedIndex === 6 ? 'Preview' : this.buttonText;
     if (this.selectedIndex !== 7) {
       this.selectedIndex += 1;
     }
@@ -19,5 +21,6 @@ export class CreateWorkflowComponent {
     if (this.selectedIndex !== 0) {
       this.selectedIndex -= 1;
     }
+    this.buttonText = 'Next';
   }
 }
