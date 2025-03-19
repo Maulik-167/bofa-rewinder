@@ -160,16 +160,20 @@
     font-size: 16px;
     font-weight: 600;
     position: absolute;
-    left: 955px;
+    left: 800px;
     top: 120px;
     width: 73px;
+
+    &.active {
+        color: var(--neutral-800, #191d23);
+    }
 }
 
 .progress-indicator {
     height: auto;
     position: absolute;
     left: 282px;
-    top: 120px;
+    top: 130px;
     overflow: visible;
 }
 
@@ -177,7 +181,7 @@
     height: auto;
     position: absolute;
     left: 520px;
-    top: 120px;
+    top: 130px;
     overflow: visible;
 }
 
@@ -185,7 +189,7 @@
     height: auto;
     position: absolute;
     left: 691px;
-    top: 120px;
+    top: 130px;
     overflow: visible;
 }
 

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CreateTemplateComponent } from './create-template/create-template.component';
@@ -18,6 +18,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { TemplateService } from './template.service';
 import { CreateWorkflowComponent } from './create-workflow/create-workflow.component';
 
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,10 +31,12 @@ import { CreateWorkflowComponent } from './create-workflow/create-workflow.compo
     CreateWorkflowComponent,
   ],
   imports: [
+    NgMultiSelectDropDownModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule,
     NgbTypeaheadModule,
     CarouselModule.forRoot(),

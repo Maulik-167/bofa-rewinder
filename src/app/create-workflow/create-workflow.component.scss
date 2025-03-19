@@ -71,7 +71,7 @@
     font-size: 16px;
     font-weight: 600;
     position: absolute;
-    left: 367px;
+    left: 450px;
     top: 220px;
     width: 107px;
 }
@@ -90,8 +90,12 @@
     width: 333px;
     height: 57px;
     position: absolute;
-    left: 421px;
+    left: 480px;
     top: 205px;
+
+    &.text {
+        left: 828px;
+    }
 }
 
 .recipient-name {
@@ -269,7 +273,6 @@
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
     position: absolute;
     left: 117px;
     top: 200px;
@@ -321,7 +324,6 @@
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
     position: absolute;
     left: 117px;
     top: 250px;
@@ -350,7 +352,6 @@
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
     position: absolute;
     left: 117px;
     top: 300px;
@@ -379,7 +380,6 @@
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
     position: absolute;
     left: 117px;
     top: 350px;
@@ -408,7 +408,6 @@
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
     position: absolute;
     left: 117px;
     top: 400px;
@@ -437,7 +436,6 @@
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
     position: absolute;
     left: 117px;
     top: 450px;
@@ -466,7 +464,6 @@
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
     position: absolute;
     left: 117px;
     top: 500px;
@@ -495,7 +492,6 @@
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
     position: absolute;
     left: 117px;
     top: 550px;
@@ -503,6 +499,10 @@
     &.active {
         opacity: 0.9;
     }
+}
+
+.w-300 {
+    width: 300px;
 }
 
 .close-icon9 {
@@ -581,7 +581,7 @@
     font-size: 16px;
     font-weight: 600;
     position: absolute;
-    left: 955px;
+    left: 800px;
     top: 159px;
     width: 73px;
 }
@@ -630,7 +630,7 @@
     width: 95px;
     height: 40px;
     position: absolute;
-    left: 1128px;
+    left: 1540px;
     top: 881px;
 
     &.active {
@@ -673,7 +673,7 @@
     width: 94px;
     height: 40px;
     position: absolute;
-    left: 1232px;
+    left: 1665px;
     top: 881px;
 }
 
@@ -681,8 +681,8 @@
     width: 19px;
     height: 19px;
     position: absolute;
-    left: 1309px;
-    top: 912px;
+    left: 1730px;
+    top: 890px;
     overflow: visible;
     aspect-ratio: 1;
 }
@@ -695,12 +695,14 @@
     line-height: 22px;
     font-weight: 700;
     position: absolute;
-    left: 1257px;
+    left: 1683px;
     top: 890px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
+
 
 .pop-up-2 {
     background: var(--shades-white, #ffffff);
@@ -711,11 +713,15 @@
     gap: 12px;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 275px;
+    width: 350px;
     position: absolute;
-    left: 421px;
+    left: 480px;
     top: 250px;
     box-shadow: 0px 4px 10px 0px rgba(228, 228, 231, 1);
+
+    &.theme {
+        left: 170px;
+    }
 }
 
 .heading {
@@ -781,11 +787,16 @@
     gap: 12px;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 275px;
+    width: 350px;
     position: absolute;
-    left: 727px;
+    left: 865px;
     top: 250px;
     box-shadow: 0px 4px 10px 0px rgba(228, 228, 231, 1);
+
+
+    &.theme {
+        left: 470px;
+    }
 }
 
 .akar-icons-radio {
@@ -806,11 +817,15 @@
     gap: 12px;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 275px;
+    width: 350px;
     position: absolute;
-    left: 1033px;
+    left: 1245px;
     top: 250px;
     box-shadow: 0px 4px 10px 0px rgba(228, 228, 231, 1);
+
+    &.theme {
+        left: 770px;
+    }
 }
 
 .close {
@@ -837,4 +852,912 @@
     position: relative;
     overflow: visible;
     aspect-ratio: 1;
+}
+
+
+
+
+
+
+
+
+// Theme Page CSS
+
+.radio-button2 {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: 437px;
+    top: 830px;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.radio-button3 {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: 684px;
+    top: 830px;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.chat {
+    background: var(--sky-white, #ffffff);
+    border-radius: 12.41px;
+    width: 154px;
+    height: 314.88px;
+    position: absolute;
+    left: 117px;
+    top: 250px;
+    overflow: hidden;
+}
+
+.native-status-bar {
+    background: var(--sky-white, #ffffff);
+    height: 17.06px;
+    position: absolute;
+    right: 0px;
+    left: 0.0004549940931610763px;
+    top: 0px;
+}
+
+._9-41 {
+    color: var(--ink-darkest, #090a0a);
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 6.2044806480407715px;
+    line-height: 6.2px;
+    font-weight: 500;
+    position: absolute;
+    left: 11.63px;
+    top: calc(50% - 2.33px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-signal {
+    height: auto;
+    position: absolute;
+    left: 111.68px;
+    top: 7.95px;
+    overflow: visible;
+}
+
+.wifi {
+    height: auto;
+    position: absolute;
+    left: 120.6px;
+    top: 7.37px;
+    overflow: visible;
+}
+
+.battery {
+    height: auto;
+    position: absolute;
+    left: 128.74px;
+    top: 6.98px;
+    overflow: visible;
+}
+
+.native-home-indicator {
+    height: 13.18px;
+    position: absolute;
+    right: 0px;
+    left: 0.0004549940931610763px;
+    bottom: 0px;
+    overflow: visible;
+}
+
+.views-dividers {
+    height: 0.39px;
+    position: absolute;
+    right: 0px;
+    left: 0.0004549940931610763px;
+    bottom: 31.8px;
+}
+
+.divider {
+    background: var(--sky-lighter, #f2f4f5);
+    position: absolute;
+    right: 0px;
+    left: 0.0004549940931610763px;
+    bottom: 0px;
+    top: -0.00020508869783952832px;
+}
+
+.rectangle-66 {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(to left, rgba(217, 217, 217, 0.2), rgba(217, 217, 217, 0.2));
+    width: 146.19px;
+    height: 200.09px;
+    position: absolute;
+    left: 0px;
+    top: 17.06px;
+    object-fit: cover;
+}
+
+.group-6 {
+    position: absolute;
+    inset: 0;
+}
+
+.rectangle-67 {
+    width: 147.74px;
+    height: 65.97px;
+    position: absolute;
+    left: -1.55px;
+    top: 217.16px;
+    overflow: visible;
+}
+
+.group-62 {
+    width: 133.87px;
+    height: 50.28px;
+    position: static;
+}
+
+.bank-of-america-s-global-commercial-banking-partnership-with-eately-is-one-of-our-most-valued-client-relationship {
+    color: #012169;
+    text-align: center;
+    font-family: "-", sans-serif;
+    font-size: 7.453963756561279px;
+    line-height: 15.51px;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 225.36px;
+    width: 133.87px;
+    height: 50.28px;
+}
+
+.bank-of-america-s-global-commercial-banking-partnership-with-eately-is-one-of-our-most-valued-client-relationship-span {
+    color: #012169;
+    font-family: "HelveticaNeue-Regular", sans-serif;
+    font-size: 7.453963756561279px;
+    line-height: 15.51px;
+    font-weight: 400;
+}
+
+.bank-of-america-s-global-commercial-banking-partnership-with-eately-is-one-of-our-most-valued-client-relationship-span2 {
+    color: #012169;
+    font-family: "HelveticaNeue-Bold", sans-serif;
+    font-size: 7.453963756561279px;
+    line-height: 15.51px;
+    font-weight: 700;
+}
+
+.bank-of-america-s-global-commercial-banking-partnership-with-eately-is-one-of-our-most-valued-client-relationship-span3 {
+    color: #012169;
+    font-family: "HelveticaNeue-Regular", sans-serif;
+    font-size: 7.453963756561279px;
+    line-height: 15.51px;
+    font-weight: 400;
+}
+
+.bank-of-america-s-global-commercial-banking-partnership-with-eately-is-one-of-our-most-valued-client-relationship-span4 {
+    color: #012169;
+    font-family: "HelveticaNeue-Bold", sans-serif;
+    font-size: 7.453963756561279px;
+    line-height: 15.51px;
+    font-weight: 700;
+}
+
+.bank-of-america-s-global-commercial-banking-partnership-with-eately-is-one-of-our-most-valued-client-relationship-span5 {
+    color: #012169;
+    font-family: "HelveticaNeue-Regular", sans-serif;
+    font-size: 7.453963756561279px;
+    line-height: 15.51px;
+    font-weight: 400;
+}
+
+.group-14 {
+    position: absolute;
+    inset: 0;
+}
+
+.group-7 {
+    width: 146.47px;
+    height: 33.25px;
+    position: static;
+}
+
+.rectangle-672 {
+    background: #ffffff;
+    width: 146.47px;
+    height: 33.25px;
+    position: absolute;
+    left: 0px;
+    top: 283.08px;
+    box-shadow: 0px 1.49px 5.23px 0px rgba(176, 166, 166, 0.25);
+}
+
+.bofa-logo-3 {
+    width: 87.27px;
+    height: 8.74px;
+    position: absolute;
+    left: calc(50% - 41.77px);
+    top: 293.56px;
+    overflow: visible;
+}
+
+.chat2 {
+    background: var(--sky-white, #ffffff);
+    border-radius: 12.44px;
+    width: 154px;
+    height: 315.78px;
+    position: absolute;
+    left: 378px;
+    top: 250px;
+    overflow: hidden;
+}
+
+.onboarding-page-carousel-with-illustrations {
+    background: #fffbfa;
+    padding: 7.4px;
+    display: flex;
+    flex-direction: column;
+    gap: 19.24px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 145.44px;
+    height: 248.11px;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 34.61px;
+}
+
+.group-23 {
+    flex-shrink: 0;
+    width: 141.17px;
+    height: 77px;
+    position: relative;
+    overflow: visible;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 11.28px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 125.22px;
+    position: relative;
+}
+
+.a-message-from-your-bank-of-america-x-client-team {
+    color: #281d1b;
+    text-align: center;
+    font-family: "PublicSans-Regular", sans-serif;
+    font-size: 6.29149055480957px;
+    line-height: 135%;
+    letter-spacing: -0.005em;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.a-message-from-your-bank-of-america-x-client-team2 {
+    color: #281d1b;
+    text-align: center;
+    font-family: "PublicSans-Bold", sans-serif;
+    font-size: 6.29149055480957px;
+    line-height: 135%;
+    letter-spacing: -0.005em;
+    font-weight: 700;
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.a-message-from-your-bank-of-america-x-client-team3 {
+    color: var(--ink-darkest, #090a0a);
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 6.222222328186035px;
+    line-height: 9.33px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.page-indicator {
+    display: flex;
+    flex-direction: row;
+    gap: 2.96px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 28.5px;
+    position: relative;
+}
+
+.page-indicator-pages {
+    flex-shrink: 0;
+    width: 2.22px;
+    height: 2.22px;
+    position: relative;
+}
+
+.rectangle {
+    background: #d72600;
+    border-radius: 133.23px;
+    position: absolute;
+    right: 0px;
+    left: -0.000383391190553084px;
+    bottom: 0px;
+    top: -0.00008831259765429422px;
+}
+
+.page-indicator-pages2 {
+    flex-shrink: 0;
+    width: 2.22px;
+    height: 2.22px;
+    position: relative;
+    backdrop-filter: blur(9.25px);
+}
+
+.rectangle2 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.23px;
+    position: absolute;
+    right: 0px;
+    left: 0.000095847797638271px;
+    bottom: 0px;
+    top: -0.000035716868296731263px;
+}
+
+.rectangle3 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.23px;
+    position: absolute;
+    right: 0px;
+    left: -0.00010850694525288418px;
+    bottom: 0px;
+    top: -0.000013563368156610522px;
+}
+
+.rectangle4 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.23px;
+    position: absolute;
+    right: 0px;
+    left: 0.00048828125px;
+    bottom: 0px;
+    top: -0.000013563368156610522px;
+}
+
+.rectangle5 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.23px;
+    position: absolute;
+    right: 0px;
+    left: 0.00002772955303953495px;
+    bottom: 0px;
+    top: -0.000033305605029454455px;
+}
+
+.rectangle6 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.23px;
+    position: absolute;
+    right: 0px;
+    left: 0.00014467592700384557px;
+    bottom: 0px;
+    top: 0.00007761260349070653px;
+}
+
+.header-navigation-bar-with-title {
+    background: #fffbfa;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 145.44px;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 0.97px;
+    overflow: hidden;
+}
+
+.status-bar {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 20.72px;
+    position: relative;
+    overflow: hidden;
+}
+
+._12-45 {
+    color: #281d1b;
+    text-align: left;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 6.29149055480957px;
+    font-weight: 600;
+    position: absolute;
+    left: 11.84px;
+    top: 6.29px;
+}
+
+.frame {
+    width: 29.05px;
+    height: 5.37px;
+    position: absolute;
+    right: 11.84px;
+    top: 7.4px;
+}
+
+.battery2 {
+    width: 8.7px;
+    height: 4.07px;
+    position: absolute;
+    left: 20.54px;
+    top: 1.11px;
+}
+
+.battery-fill {
+    background: #281d1b;
+    border-radius: 5.18px;
+    width: 8.14px;
+    height: 4.07px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.battery-fill2 {
+    background: #281d1b;
+    border-radius: 5.18px;
+    width: 3.7px;
+    height: 1.85px;
+    position: absolute;
+    left: 5px;
+    top: 1.11px;
+}
+
+.wifi2 {
+    border-radius: 2.22px;
+    width: 6.29px;
+    height: 4.81px;
+    position: absolute;
+    left: 11.66px;
+    bottom: 0.19px;
+    overflow: visible;
+}
+
+.signal {
+    width: 8.7px;
+    height: 5.18px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.navigation-bar {
+    padding: 1.48px 5.92px 1.48px 5.92px;
+    display: flex;
+    flex-direction: row;
+    gap: 14.06px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.bofa-logo-4 {
+    flex-shrink: 0;
+    width: 17.95px;
+    height: 14.36px;
+    position: relative;
+    object-fit: cover;
+    aspect-ratio: 5/4;
+}
+
+.year-rewinder {
+    color: #281d1b;
+    text-align: center;
+    font-family: "RobotoSerif-Bold", sans-serif;
+    font-size: 7.401754379272461px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    position: relative;
+    max-width: 118.43px;
+    max-height: 14.26px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.bottom-tab-bar-with-big-button {
+    background: #fffbfa;
+    padding: 11.87px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.48px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 145.83px;
+    height: 21px;
+    position: absolute;
+    left: 0px;
+    top: 276.89px;
+    overflow: hidden;
+}
+
+.bottom-tab-bar-with-labels {
+    background: #fffbfa;
+    padding: 9.28px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 9.28px;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0px 5.94px 23.75px 0px rgba(0, 0, 0, 0.2);
+}
+
+.gesture-indicator-bar {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 0px;
+    position: relative;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, -1);
+    overflow: hidden;
+}
+
+.bofa-logo-42 {
+    width: 87.52px;
+    height: 8.76px;
+    position: absolute;
+    left: calc(50% - 41.03px);
+    top: 296.72px;
+    overflow: visible;
+}
+
+.chat3 {
+    background: var(--sky-white, #ffffff);
+    border-radius: 12.45px;
+    width: 154px;
+    height: 316px;
+    position: absolute;
+    left: 624.54px;
+    top: 250px;
+    overflow: hidden;
+    aspect-ratio: 145.94/316;
+}
+
+.onboarding-page-carousel-with-illustrations2 {
+    background: #fffbfa;
+    padding: 7.41px;
+    display: flex;
+    flex-direction: column;
+    gap: 19.26px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 145.55px;
+    height: 242.45px;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 34.64px;
+}
+
+.hello-cuate {
+    flex-shrink: 0;
+    width: 118.82px;
+    height: 112.37px;
+    position: relative;
+    overflow: visible;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5.93px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 125.31px;
+    position: relative;
+}
+
+.ciao-eately {
+    color: #281d1b;
+    text-align: center;
+    font-family: "RobotoSerif-Bold", sans-serif;
+    font-size: 12.591835975646973px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.a-message-from-your-bank-of-america-x-client-team4 {
+    color: #281d1b;
+    text-align: center;
+    font-family: "PublicSans-Regular", sans-serif;
+    font-size: 6.295917987823486px;
+    line-height: 135%;
+    letter-spacing: -0.005em;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.page-indicator2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2.96px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 28.52px;
+    position: relative;
+}
+
+.rectangle7 {
+    background: #d72600;
+    border-radius: 133.33px;
+    position: absolute;
+    right: 0px;
+    left: -0.00014495849609375px;
+    bottom: 0px;
+    top: -0.000020215466065565124px;
+}
+
+.page-indicator-pages3 {
+    flex-shrink: 0;
+    width: 2.22px;
+    height: 2.22px;
+    position: relative;
+    backdrop-filter: blur(9.26px);
+}
+
+.rectangle8 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.33px;
+    position: absolute;
+    right: 0px;
+    left: 0.0004459551128093153px;
+    bottom: 0px;
+    top: -0.000020215466065565124px;
+}
+
+.rectangle9 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.33px;
+    position: absolute;
+    right: 0px;
+    left: 0.000060306236264295876px;
+    bottom: 0px;
+    top: -0.000020215466065565124px;
+}
+
+.rectangle10 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.33px;
+    position: absolute;
+    right: 0px;
+    left: -0.00033156279823742807px;
+    bottom: 0px;
+    top: -0.000020215466065565124px;
+}
+
+.rectangle11 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.33px;
+    position: absolute;
+    right: 0px;
+    left: 0.00025935081066563725px;
+    bottom: 0px;
+    top: -0.000020215466065565124px;
+}
+
+.rectangle12 {
+    background: rgba(46, 24, 20, 0.4);
+    border-radius: 133.33px;
+    position: absolute;
+    right: 0px;
+    left: -0.0001262980658793822px;
+    bottom: 0px;
+    top: -0.000020215466065565124px;
+}
+
+.header-navigation-bar-with-title2 {
+    background: #fffbfa;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 145.55px;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 0.97px;
+    overflow: hidden;
+}
+
+.status-bar2 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 20.74px;
+    position: relative;
+    overflow: hidden;
+}
+
+._12-452 {
+    color: #281d1b;
+    text-align: left;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 6.295917987823486px;
+    font-weight: 600;
+    position: absolute;
+    left: 11.85px;
+    top: 6.3px;
+}
+
+.frame2 {
+    width: 29.07px;
+    height: 5.37px;
+    position: absolute;
+    right: 11.85px;
+    top: 7.41px;
+}
+
+.battery3 {
+    width: 8.7px;
+    height: 4.07px;
+    position: absolute;
+    left: 20.55px;
+    top: 1.11px;
+}
+
+.battery-fill3 {
+    background: #281d1b;
+    border-radius: 5.18px;
+    width: 8.15px;
+    height: 4.07px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.wifi3 {
+    border-radius: 2.22px;
+    width: 6.3px;
+    height: 4.81px;
+    position: absolute;
+    left: 11.67px;
+    bottom: 0.19px;
+    overflow: visible;
+}
+
+.signal2 {
+    width: 8.7px;
+    height: 5.18px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.navigation-bar2 {
+    padding: 1.48px 5.93px 1.48px 5.93px;
+    display: flex;
+    flex-direction: row;
+    gap: 14.07px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.bofa-logo-43 {
+    flex-shrink: 0;
+    width: 17.96px;
+    height: 14.37px;
+    position: relative;
+    object-fit: cover;
+    aspect-ratio: 17.96/14.37;
+}
+
+.year-rewinder2 {
+    color: #281d1b;
+    text-align: center;
+    font-family: "RobotoSerif-Bold", sans-serif;
+    font-size: 7.40696382522583px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    position: relative;
+    max-width: 118.51px;
+    max-height: 14.27px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.bottom-tab-bar-with-big-button2 {
+    background: #fffbfa;
+    padding: 11.88px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.49px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 145.94px;
+    height: 21.01px;
+    position: absolute;
+    left: 0px;
+    top: 277.08px;
+    overflow: hidden;
+}
+
+.bottom-tab-bar-with-labels2 {
+    background: #fffbfa;
+    padding: 9.28px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 9.28px;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0px 5.94px 23.77px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bofa-logo-32 {
+    width: 87.59px;
+    height: 8.77px;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 296.93px;
+    overflow: visible;
+}
+
+
+
+.mycontent-left {
+    border-right: 1px solid #d7d7d7;
+    width: 50%;
+}
+
+
+.multiselect-dropdown .dropdown-btn .selected-item-container .selected-item {
+    width: auto !important;
+    max-width: none !important;
+}
+
+
+.mycontent-right {
+    width: 30%;
 }

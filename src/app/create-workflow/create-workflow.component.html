@@ -1,58 +1,75 @@
-<div class="mac-book-air-3">
+<div class="mac-book-air-3" style="background-image: url('../../assets/background.jpg'); background-size: cover;">
     <div *ngIf="selectedIndex === 0">
         <div class="label">To</div>
-        <div class="bar">
-            <div class="recipient-name">Hi, Alexender</div>
+        <select class="form-select" aria-label="Default select example" class="bar">
+            <option selected value="1">Ciao</option>
+            <option value="2">Hi</option>
+            <option value="6">Hello</option>
+            <option value="3">Hola</option>
+            <option value="4">Greetings</option>
+            <option value="5">Dear</option>
+        </select>
+        <div>
+            <input type="text" class="bar text" value="Eataly">
         </div>
     </div>
     <app-header></app-header>
-    <div class="member pointer" [ngClass]="{'active': selectedIndex === 0}" (click)="selectedIndex = 0">
-        <div class="name">
-            <div class="full-name">Intro 1</div>
+    <div class="member pointer w-300" [ngClass]="{'active': selectedIndex === 0}" (click)="selectedIndex = 0"
+        *ngIf="selectedIndex !== 8 && selectedIndex !== 9">
+        <div class="name" style="display: contents;">
+            <div class="full-name">Page 1 Salutation</div>
+            <img class="close-icon2" src="../../assets/close-Icon.svg" />
         </div>
-        <img class="close-icon2" src="close-icon1.svg" />
     </div>
-    <div class="member2 pointer" [ngClass]="{'active': selectedIndex === 1}" (click)="selectedIndex = 1">
-        <div class="name">
-            <div class="full-name">Intro 2</div>
+    <div class="member2 pointer w-300" [ngClass]="{'active': selectedIndex === 1}" (click)="selectedIndex = 1"
+        *ngIf="selectedIndex !== 8 && selectedIndex !== 9">
+        <div class="name" style="display: contents;">
+            <div class="full-name">Page 1 Year Wrap Options</div>
+            <img class="close-icon3" src="assets/close-Icon.svg" />
         </div>
-        <img class="close-icon3" src="close-icon2.svg" />
     </div>
-    <div class="member3 pointer" [ngClass]="{'active': selectedIndex === 2}" (click)="selectedIndex = 2">
-        <div class="name">
-            <div class="full-name">Intro 3</div>
+    <div class="member3 pointer w-300" [ngClass]="{'active': selectedIndex === 2}" (click)="selectedIndex = 2"
+        *ngIf="selectedIndex !== 8 && selectedIndex !== 9">
+        <div class="name" style="display: contents;">
+            <div class="full-name">Last Page Thank You Note Options</div>
+            <img class="close-icon4" src="assets/close-Icon.svg" />
         </div>
-        <img class="close-icon4" src="close-icon3.svg" />
     </div>
-    <div class="member4 pointer" [ngClass]="{'active': selectedIndex === 3}" (click)="selectedIndex = 3">
-        <div class="name">
-            <div class="full-name">Number Of Calls</div>
+    <div class="member4 pointer w-300" [ngClass]="{'active': selectedIndex === 3}" (click)="selectedIndex = 3"
+        *ngIf="selectedIndex !== 8 && selectedIndex !== 9">
+        <div class="name" style="display: contents;">
+            <div class="full-name">Total Client Meetings Held</div>
+            <img class="close-icon5" src="assets/close-Icon.svg" />
         </div>
-        <img class="close-icon5" src="close-icon4.svg" />
     </div>
-    <div class="member5 pointer" [ngClass]="{'active': selectedIndex === 4}" (click)="selectedIndex = 4">
-        <div class="name">
-            <div class="full-name">Total Client Meeting Held</div>
+
+    <div class="member5 pointer w-300" [ngClass]="{'active': selectedIndex === 4}" (click)="selectedIndex = 3"
+        *ngIf="selectedIndex !== 8 && selectedIndex !== 9">
+        <div class="name" style="display: contents;">
+            <div class="full-name">Account Openings (International)</div>
+            <img class="close-icon5" src="assets/close-Icon.svg" />
         </div>
-        <img class="close-icon6" src="close-icon5.svg" />
     </div>
-    <div class="member6 pointer" [ngClass]="{'active': selectedIndex === 5}" (click)="selectedIndex = 5">
-        <div class="name">
+    <div class="member6 pointer w-300" [ngClass]="{'active': selectedIndex === 5}" (click)="selectedIndex = 5"
+        *ngIf="selectedIndex !== 8 && selectedIndex !== 9">
+        <div class="name" style="display: contents;">
             <div class="full-name">Events Invited To</div>
+            <img class="close-icon7" src="assets/close-Icon.svg" />
         </div>
-        <img class="close-icon7" src="close-icon6.svg" />
     </div>
-    <div class="member7 pointer" [ngClass]="{'active': selectedIndex === 6}" (click)="selectedIndex = 6">
-        <div class="name">
+    <div class="member7 pointer w-300" [ngClass]="{'active': selectedIndex === 6}" (click)="selectedIndex = 6"
+        *ngIf="selectedIndex !== 8 && selectedIndex !== 9">
+        <div class="name" style="display: contents;">
             <div class="full-name">Closing 1</div>
+            <img class="close-icon8" src="assets/close-Icon.svg" />
         </div>
-        <img class="close-icon8" src="close-icon7.svg" />
     </div>
-    <div class="member8 pointer" [ngClass]="{'active': selectedIndex === 7}" (click)="selectedIndex = 7">
-        <div class="name">
+    <div class="member8 pointer w-300" [ngClass]="{'active': selectedIndex === 7}" (click)="selectedIndex = 7"
+        *ngIf="selectedIndex !== 8 && selectedIndex !== 9">
+        <div class="name" style="display: contents;">
             <div class="full-name">Closing 2</div>
+            <img class="close-icon9" src="assets/close-Icon.svg" />
         </div>
-        <img class="close-icon9" src="close-icon8.svg" />
     </div>
     <div class="line-47"></div>
     <div class="primary-button-with-icon-left pointer" [ngClass]="{'active': selectedIndex !== 0}" (click)="gotoPrev()">
@@ -61,45 +78,40 @@
         </div>
     </div>
     <div class="button-background"></div>
-    <img class="arrow-icon" src="arrow-icon0.svg" />
+    <img class="arrow-icon" src="../../assets/arrow-icon0.svg" />
     <div class="button-text pointer" (click)="gotoNext()">{{buttonText}}</div>
+
     <div *ngIf="selectedIndex === 1">
         <div class="pop-up-2">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">Option 1</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    The countdown to a new year has begun, and we’re closing out 2024 in style. <br /> <br />
                 </div>
             </div>
         </div>
         <div class="pop-up-3">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
-                <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
+                <div class="title">Option 2</div>
+                <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    As 2024 ends, we’re wrapping things up right alongside it. <br /> <br />
                 </div>
             </div>
         </div>
         <div class="pop-up-4">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">Option 3</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    The year is winding down, and so are we—time to reflect on 2024! <br /> <br />
                 </div>
             </div>
         </div>
@@ -108,8 +120,8 @@
         font-weight: bold;
         
         position: absolute;
-        left: 720px;
-        top: 490px;"> OR </label>
+        left: 780px;
+        top: 400px;"> OR </label>
 
         <form style="border-radius: 4px;
         padding: 16px;
@@ -120,8 +132,8 @@
         align-items: flex-start;
         justify-content: flex-start;
         position: absolute;
-        left: 400px;
-        top: 520px;">
+        left: 466px;
+        top: 440px;">
             <div class="form-group row" style="width: 600px;">
                 <label for="inputPassword" class="col-sm-3 col-form-label">Custom Message</label>
                 <div class="col-sm-9">
@@ -130,43 +142,38 @@
             </div>
         </form>
     </div>
+
     <div *ngIf="selectedIndex === 2">
         <div class="pop-up-2">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">Option 1</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    Thank You for an incredible year. Here’s to an even more exciting future together! <br /> <br />
                 </div>
             </div>
         </div>
         <div class="pop-up-3">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">Option 2</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    What a year it’s been! Can’t wait to make the next one even more unforgettable <br /> <br />
                 </div>
             </div>
         </div>
         <div class="pop-up-4">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">Option 3</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    The best is yet to come! Thanks for an incredible year, and here’s to an even brighter future.
                 </div>
             </div>
         </div>
@@ -176,8 +183,8 @@
         font-weight: bold;
         
         position: absolute;
-        left: 720px;
-        top: 490px;"> OR </label>
+        left: 780px;
+        top: 400px;"> OR </label>
 
         <form style="border-radius: 4px;
         padding: 16px;
@@ -188,8 +195,8 @@
         align-items: flex-start;
         justify-content: flex-start;
         position: absolute;
-        left: 400px;
-        top: 520px;">
+        left: 466px;
+        top: 440px;">
             <div class="form-group row" style="width: 600px;">
                 <label for="inputPassword" class="col-sm-3 col-form-label">Custom Message</label>
                 <div class="col-sm-9">
@@ -202,185 +209,106 @@
     <div *ngIf="selectedIndex === 3">
         <div class="pop-up-2">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">Conversations That Cooked</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    This year, we sat down for <b>87 client meetings</b>—each one a recipe for success! <br /> <br />
+                    <br />
+                    Your most business-packed day? September 14, when we had 5 meetings back-to-back—now that’s a full
+                    course meal!
                 </div>
             </div>
         </div>
         <div class="pop-up-3">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">Conversations That Clicked</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    This year, we powered through <b>156 client meetings</b>—each one a building block for success!
+                    <br /> <br />
+                    Your most action-packed day? <b>May 14</b>, when we tackled <b>5 meetings back-to-back</b>—now
+                    that’s a
+                    masterclass in momentum!
                 </div>
             </div>
         </div>
-        <div class="pop-up-4">
-            <div class="heading">
-                <div class="title">Lorem ipsum</div>
-                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
-            </div>
-            <div class="paragraph">
-                <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                </div>
-            </div>
-        </div>
-
-        <form style="border-radius: 4px;
-        padding: 16px;
-        display: flex
-    ;
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 275px;
-        position: absolute;
-        left: 400px;
-        top: 504px;">
-            <div class="form-group row">
-                <label for="inputPassword" class="col-sm-8 col-form-label">Self Source Value For Number Of Calls</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control" id="value" placeholder="Password" value="5">
-                </div>
-            </div>
-        </form>
     </div>
     <div *ngIf="selectedIndex === 4">
         <div class="pop-up-2">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">Breaking Boundaries, Building Bridges</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    You took global expansion to the next level with <b>14 new international accounts</b>—that’s more
+                    than a
+                    championship team has players! <br /> <br />
+
+                    Your biggest power move? <b>June</b>, when you opened <b>4 accounts</b> in a single month. Now
+                    that’s a winning
+                    streak!
                 </div>
             </div>
         </div>
         <div class="pop-up-3">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">New Horizons, New Accounts</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    You expanded your global footprint with <b>14 new international accounts</b>—that’s more than a
+                    pizza has
+                    slices!
+                    <br /> <br />
+                    Your biggest growth month? <b>June</b>, when you opened <b>4 accounts</b> in a single month. <br />
+                    <br /> <br />
                 </div>
             </div>
         </div>
-        <div class="pop-up-4">
-            <div class="heading">
-                <div class="title">Lorem ipsum</div>
-                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
-            </div>
-            <div class="paragraph">
-                <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                </div>
-            </div>
-        </div>
-        <form style="border-radius: 4px;
-        padding: 16px;
-        display: flex
-    ;
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 275px;
-        position: absolute;
-        left: 400px;
-        top: 504px;">
-            <div class="form-group row">
-                <label for="inputPassword" class="col-sm-8 col-form-label">Self Source Value For Total Client Meeting
-                    Held</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control" id="value" placeholder="Password" value="160">
-                </div>
-            </div>
-        </form>
+
     </div>
     <div *ngIf="selectedIndex === 5">
         <div class="pop-up-2">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">An Exclusive Seat at the Table</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option1">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    You didn’t just show up, you made an impression! <br /> <br />
+                    Invited to 23 top-tier industry events, from global food summits to investor tastings. <br /> <br />
+                    Your biggest night? November 9, when you stole the show at the International Gourmet Forum! <br />
+                    <br /><br />
+
+
                 </div>
             </div>
         </div>
         <div class="pop-up-3">
             <div class="heading">
-                <div class="title">Lorem ipsum</div>
+                <div class="title">Front Row to Success</div>
                 <input class="form-check-input" type="radio" name="itemSelect" id="option2" value="option2">
             </div>
             <div class="paragraph">
                 <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    You weren’t just on the guest list—you were the main event! <br /> <br />
+                    Invited to 23 top-tier industry gatherings, from global summits to exclusive investor forums. <br />
+                    <br />
+
+                    Your standout moment? November 9, when you took center stage and made waves at the International
+                    Business Leaders Forum! <br /> <br />
+
+
                 </div>
             </div>
         </div>
-        <div class="pop-up-4">
-            <div class="heading">
-                <div class="title">Lorem ipsum</div>
-                <input class="form-check-input" type="radio" name="itemSelect" id="option3" value="option3">
-            </div>
-            <div class="paragraph">
-                <div class="text">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                </div>
-            </div>
-        </div>
-        <form style="border-radius: 4px;
-        padding: 16px;
-        display: flex
-    ;
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 275px;
-        position: absolute;
-        left: 400px;
-        top: 504px;">
-            <div class="form-group row">
-                <label for="inputPassword" class="col-sm-8 col-form-label">Self Source Value For Events Invited
-                    To</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control" id="value" placeholder="Password" value="250">
-                </div>
-            </div>
-        </form>
+
     </div>
     <div *ngIf="selectedIndex === 6">
         <div class="pop-up-2">
@@ -463,5 +391,80 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <div class="main-frame" *ngIf="selectedIndex === 8">
+        <label style="margin-left: 113px;
+        margin-top: 25px;
+        font-weight: bold;"> Choose Background Theme</label>
+
+        <!-- <div class="card" style="width: 18rem; margin-left: 110px;    margin-top: 25px;"
+            *ngFor="let theme of themeInfo">
+            <img class="card-img-top" [src]="theme.imageURL" alt="Card image cap">
+            <div class="card-body">
+                <input class="form-check-input" type="radio" name="itemSelect" [id]="theme.id" value="theme.id"
+                    style="margin-left: 110px;">
+            </div>
+        </div> -->
+
+
+        <div class="row" style="margin-left: 100px;">
+            <div class="d-flex flex-wrap">
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem; margin-right: 25px; margin-top: 25px;"
+                    *ngFor="let theme of themeInfo">
+                    <img class="card-img-top" [src]="theme.imageURL" alt="Card image cap">
+                    <div class="card-body">
+                        <input class="form-check-input" type="radio" name="itemSelect" [id]="theme.id" value="theme.id"
+                            style="margin-left: 110px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="card" style="width: 18rem; margin-left: 110px; margin-top: 25px;">
+            <img class="card-img-top" src="../../assets/chat1.png" alt="Card image cap">
+            <div class="card-body">
+                <input class="form-check-input" type="radio" name="itemSelect" id="option1" value="option2"
+                    style="margin-left: 110px;">
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="main-frame" *ngIf="selectedIndex === 9">
+        <label style="margin-left: 113px;
+        margin-top: 25px;
+        font-weight: bold;"> Preview</label>
+
+        <div class="row">
+            <div class="span6 mycontent-left">
+                <div style=" margin-top: 25px; margin-left:116px;">
+                    <!-- <iframe [src]='videoURL()' width="640" height="360">
+                    </iframe> -->
+                    <video src="http://localhost:4200/assets/Rewinder.mov" type="vider/mp4">
+                    </video>
+                    <!-- <input id="file-input" #Image type="file" (change)="handleFileInput($event)" /> -->
+                </div>
+                <div class="">
+                </div>
+            </div>
+            <div class="span6 mycontent-right">
+                <label>Select Clients :</label>
+                <div *ngIf="loadContent">
+                    <!-- <ng-multiselect-dropdown #multiSelect [placeholder]="'Select City'" [data]="data"
+                            [settings]="settings" [disabled]="false" formControlName="userName">
+                        </ng-multiselect-dropdown> -->
+                    <ng-multiselect-dropdown [placeholder]="'Select Clients'" [settings]="dropdownSettings"
+                        [data]="dropdownList" [(ngModel)]="selectedItems">
+                    </ng-multiselect-dropdown>
+
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 </div>

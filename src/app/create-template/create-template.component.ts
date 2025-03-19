@@ -18,33 +18,32 @@ export class CreateTemplateComponent {
   isChooseLanguage = false;
   filteredClients: Array<{ id: number, name: string }> = [];
   clients = [
-    { id: 1, name: 'John Doe', country: 'US', industry: 'Ind1' },
+    { id: 1, name: 'Eataly', country: 'United States', industry: 'Food & Beverage' },
     { id: 2, name: 'Jane Smith', country: 'Aus', industry: 'Ind2' },
     { id: 3, name: 'Michael Johnson', country: 'Canada', industry: 'Ind3' }
   ];
 
   tagesInfo = [
     {
-      title: "Number Of Calls",
-      count: '05',
+      title: "Total Client Meetings Held",
+      count: '156',
       tagName: 'Engagement'
     },
     {
-      title: "Number Of Events",
-      count: '10',
-      tagName: 'Engagement'
-    },
-    {
-      title: "Total Client Meeting Held",
-      count: '160',
+      title: "Account Openings(International)",
+      count: '14',
       tagName: 'Engagement'
     },
     {
       title: "Events Invited To",
-      count: '250',
+      count: '23',
+      tagName: 'Engagement'
+    },
+    {
+      title: "Annual Total Transactions",
+      count: '12,482',
       tagName: 'Engagement'
     }
-
   ];
 
 
