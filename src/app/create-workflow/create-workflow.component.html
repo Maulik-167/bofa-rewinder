@@ -443,7 +443,12 @@
                 <div style=" margin-top: 25px; margin-left:116px;">
                     <!-- <iframe [src]='videoURL()' width="640" height="360">
                     </iframe> -->
-                    <video src="http://localhost:4200/assets/Rewinder.mov" type="vider/mp4">
+                    <!-- <video src="http://localhost:4200/assets/Rewinder.mov" type="vider/mp4">
+                    </video> -->
+
+                    <video controls #videoPlayer>
+                        <source src="{{videoSource}}" type="video/mp4">
+                        Your browser does not support the video tag.
                     </video>
                     <!-- <input id="file-input" #Image type="file" (change)="handleFileInput($event)" /> -->
                 </div>

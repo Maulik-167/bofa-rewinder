@@ -4,6 +4,7 @@ import { DomSanitizer, SafeHtml, SafeStyle, SafeScript, SafeUrl, SafeResourceUrl
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 import { IDropdownSettings } from 'ng-multiselect-dropdown';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-workflow',
@@ -39,7 +40,7 @@ export class CreateWorkflowComponent implements OnInit {
   public data: any = [];
   public settings = {};
 
-  constructor(private templateService: TemplateService, protected sanitizer: DomSanitizer, private fb: FormBuilder) {
+  constructor(private templateService: TemplateService, protected sanitizer: DomSanitizer, private fb: FormBuilder, private router: Router) {
     this.templateService.selectedPage === 'theme';
     this.formGroup = this.fb.group({
       userName: new FormControl(this.data, Validators.required),
@@ -51,7 +52,7 @@ export class CreateWorkflowComponent implements OnInit {
   selectedItems: any = [];
   dropdownSettings: IDropdownSettings = {};
 
-
+  videoSource = "http://localhost:4200/assets/Rewinder.mov";
   ngOnInit() {
     this.file = {
       lastModified: 1742379951497,
@@ -76,7 +77,7 @@ export class CreateWorkflowComponent implements OnInit {
     };
 
     this.loadContent = true;
-    
+
   }
 
 
@@ -100,6 +101,10 @@ export class CreateWorkflowComponent implements OnInit {
       this.selectedIndex = 9;
       this.buttonText = 'Send'
       this.templateService.selectedPage = 'send';
+    }
+    else if (this.buttonText === 'send') {
+      this.router.navigateByUrl('/');
+      this.templateService.selectedPage = 'client-Search';
     }
     else {
       this.buttonText = this.selectedIndex === 6 ? 'Theme' : this.buttonText;
