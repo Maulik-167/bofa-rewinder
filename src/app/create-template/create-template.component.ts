@@ -26,24 +26,47 @@ export class CreateTemplateComponent {
   tagesInfo = [
     {
       title: "Total Client Meetings Held",
-      count: '156',
-      tagName: 'Engagement'
+      count: '156 Meetings',
+      tagName: 'Connections'
     },
     {
-      title: "Account Openings(International)",
-      count: '14',
-      tagName: 'Engagement'
+      title: "A/c Openings (International)",
+      count: '14 Accounts',
+      tagName: 'Growth'
     },
     {
       title: "Events Invited To",
-      count: '23',
-      tagName: 'Engagement'
+      count: '23 Events',
+      tagName: 'Spotlight'
     },
     {
       title: "Annual Total Transactions",
-      count: '12,482',
+      count: '12,482 Transactions',
+      tagName: 'Operations'
+    }    
+  ];
+
+  tagesInfo2 = [
+    {
+      title: "Total Payment Volume",
+      count: '$78.3 Million',
+      tagName: 'Payments'
+    },
+    {
+      title: "Pipelines Open",
+      count: '57 Business Pipelines',
+      tagName: 'Deals'
+    },
+    {
+      title: "Pipelines Closed",
+      count: '31 Pipelines Closed',
+      tagName: 'Deals'
+    },
+    {
+      title: "Total Service Calls Answered",
+      count: '1287 Service Calls',
       tagName: 'Engagement'
-    }
+    }    
   ];
 
 

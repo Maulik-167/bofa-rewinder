@@ -1166,14 +1166,13 @@
 }
 
 .today-s-sale {
-    color: var(--gray-500, #71717a);
+    color: black;
     text-align: left;
     font-family: "Inter-Medium", sans-serif;
     font-size: 11px;
     line-height: 18px;
     letter-spacing: 1px;
     font-weight: 500;
-    text-transform: uppercase;
     position: relative;
 }
 
@@ -1298,7 +1297,6 @@
     line-height: 18px;
     letter-spacing: 1px;
     font-weight: 500;
-    text-transform: uppercase;
     position: relative;
 }
 
@@ -1498,7 +1496,7 @@
     height: 40px;
     position: absolute;
     left: 1055px;
-    top: 881px;
+    top: 1150px;
 }
 
 
@@ -1534,16 +1532,16 @@
     width: 166px;
     height: 40px;
     position: absolute;
-    left: 1160px;
-    top: 881px;
+    left: 1175px;
+    top: 1150px;
 }
 
 .arrow-icon {
     width: 19px;
     height: 19px;
     position: absolute;
-    left: 1300px;
-    top: 890px;
+    left: 1311px;
+    top: 1162px;
     overflow: visible;
     aspect-ratio: 1;
 }

@@ -1,11 +1,12 @@
 <!-- <app-header></app-header> -->
-<div class="mac-book-air-3" style="background-image: url('../../assets/newbg.jpg'); background-size: cover;">
+<div class="mac-book-air-3" style="background-image: url('../../assets/test.avif'); background-size: cover;">
     <app-header></app-header>
     <h3 style="margin-left:112px; margin-top: 20px;">Search Clients</h3>
     <div style="margin-left:112px">
         <div class="search-container">
-        <input type="text" class="form-control w-50" placeholder="Search by client name" [value]="selectedClient?.name"
-            (input)="onSearch()" #searchInput /> </div>
+            <input type="text" class="form-control w-50" placeholder="Search by client name"
+                [value]="selectedClient?.name" (input)="onSearch()" #searchInput />
+        </div>
         <div *ngIf="filteredClients.length > 0" class="dropdown-menu show">
             <a *ngFor="let client of filteredClients" class="dropdown-item" (click)="onClientSelect(client)">
                 {{ client.name }}
@@ -15,154 +16,205 @@
     </div>
 
     <div *ngIf="selectedClient && selectedClient.id && !isChooseLanguage" style="margin-left: 112px;margin-top: 25px;">
-        <!-- <h5 style=" font-size: 20px; font-weight: bold; color: #333; margin-bottom: 15px; border-bottom: 2px solid #c9e2fc; padding-bottom: 5px;">Client Details</h5>
-        <div class="row" style="margin-bottom: 10px; display: flex; align-items: center;">
-            <div class="col-md-2 " style="font-weight: bold; color: #555;">
-                <label for="name" class="form-label">Client Name: </label>
-            </div>
-            <div class="col-md-3 " style= " background: #f8f9fa ; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
-                <label for="name" class="form-label" style="color: #007bff; font-weight: 600;">{{selectedClient.name}}</label>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-md-2 ">
-                <label for="name" class="form-label">Country Name: </label>
-            </div>
-            <div class="col-md-3 ">
-                <label for="name" class="form-label">{{selectedClient.country}}</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 ">
-                <label for="name" class="form-label">Industry Name: </label>
-            </div>
-            <div class="col-md-3 ">
-                <label for="name" class="form-label">{{selectedClient.industry}}</label>
-            </div>
-        </div> -->
         <h5 style="font-size: 20px; font-weight: bold; color: #333; margin-bottom: 15px; padding-bottom: 5px;">
             Client Details
         </h5>
-        
+
         <div class="row" style="margin-bottom: 10px; display: flex; align-items: center;">
             <div class="col-md-2" style="font-weight: bold; color: #555;">
                 <label for="name" class="form-label">Client Name: </label>
             </div>
-            <div class="col-md-3" style="background: #f8f9fa; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
-                <label for="name" class="form-label" style="color: #007bff; font-weight: 600;">{{selectedClient.name}}</label>
+            <div class="col-md-3"
+                style="background: #f8f9fa; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
+                <label for="name" class="form-label"
+                    style="color: #007bff; font-weight: 600;">{{selectedClient.name}}</label>
             </div>
         </div>
-        
+
         <div class="row" style="margin-bottom: 10px; display: flex; align-items: center;">
             <div class="col-md-2" style="font-weight: bold; color: #555;">
                 <label for="name" class="form-label">Country Name: </label>
             </div>
-            <div class="col-md-3" style="background: #f8f9fa; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
-                <label for="name" class="form-label" style="color: #007bff; font-weight: 600;">{{selectedClient.country}}</label>
+            <div class="col-md-3"
+                style="background: #f8f9fa; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
+                <label for="name" class="form-label"
+                    style="color: #007bff; font-weight: 600;">{{selectedClient.country}}</label>
             </div>
         </div>
-        
+
         <div class="row" style="margin-bottom: 10px; display: flex; align-items: center;">
             <div class="col-md-2" style="font-weight: bold; color: #555;">
                 <label for="name" class="form-label">Industry Name: </label>
             </div>
-            <div class="col-md-3" style="background: #f8f9fa; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
-                <label for="name" class="form-label" style="color: #007bff; font-weight: 600;">{{selectedClient.industry}}</label>
-            </div>
-        </div>
-        
-        <!-- <div class="row" style="margin-left: 112px;">
-            <div class="text">Tags</div>
-            <div class="tag-button">
-                <div class="frame-1">
-                    <div class="button-name pointer">All</div>
-                </div>
-            </div>
-            <div class="tag-button2">
-                <div class="frame-1">
-                    <div class="button-name2 pointer" style="    color: var(--blue-500, blue);">Deals</div>
-                </div>
-            </div>
-            <div class="tag-button3">
-                <div class="frame-1">
-                    <div class="button-name3 pointer" style="    color: var(--green-500, #22c55e);">Engagement</div>
-                </div>
-            </div>
-            <div class="tag-button4">
-                <div class="frame-1">
-                    <div class="button-name2 pointer">Tags 3</div>
-                </div>
-            </div>
-            <div class="tag-button5">
-                <div class="frame-1">
-                    <div class="button-name2 pointer">Tags 4</div>
-                </div>
+            <div class="col-md-3"
+                style="background: #f8f9fa; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
+                <label for="name" class="form-label"
+                    style="color: #007bff; font-weight: 600;">{{selectedClient.industry}}</label>
             </div>
         </div>
 
-        <div class="row" style="margin-top: 113px;">
-            <div class="d-flex flex-wrap">
-                card 2
-                <div class="card" style="width: 18rem; margin-right: 25px;" *ngFor="let tagDetails of tagesInfo">
-                    <div class="card-body">
-                        <h5 class="today-s-sale">{{tagDetails.title}}</h5>
-                        <input class="form-check-input growth" type="checkbox">
-                        <p class="_12-426">{{tagDetails.count}}</p>
-                    </div>
-                    <div class="growth">
-                        <div class="_36">{{tagDetails.tagName}}</div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="tags-section" style="position: relative; margin-top: 80px; width: 1220px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 16px; font-weight: bold; color: #333; padding: 15px 20px; background: #fff; border-radius: 12px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="tags-section"
+            style="position: relative; margin-top: 40px; width: 1220px; display: flex; flex-wrap: wrap; align-items: center; gap: 18px; font-size: 16px; font-weight: bold; color: #333; padding: 15px 20px; background: #fff; border-radius: 12px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
 
             <div class="tags-title" style="margin-right: 15px; white-space: nowrap;">Tags</div>
-        
-            <div class="tag-item" style="background: #f1f5f9; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+
+            <div class="tag-item"
+                style="background: #D3D3D3; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
                 <span>All</span>
             </div>
-        
-            <div class="tag-item" style="background: #e0f2fe; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
-                <span style="color: blue; font-weight: 600;">Deals</span>
+
+            <div class="tag-item"
+                style="background: #e0f2fe; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span style="font-weight: 600;">Deals 🏆</span>
             </div>
-        
-            <div class="tag-item" style="background: #dcfce7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
-                <span style="color: #22c55e; font-weight: 600;">Engagement</span>
+
+            <div class="tag-item"
+                style="background: #dcfce7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span style="font-weight: 600;">Engagement 🔗</span>
             </div>
-        
-            <div class="tag-item" style="background: #fef3c7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
-                <span>Tags 3</span>
+
+            <div class="tag-item"
+                style="background: #fef3c7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span>Payments 💲</span>
             </div>
-        
-            <div class="tag-item" style="background: #fbcfe8; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
-                <span>Tags 4</span>
+
+            <div class="tag-item"
+                style="background: #fbcfe8; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span>Connections 🤝</span>
             </div>
+
+            <div class="tag-item"
+                style="background: #7FFFD4; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span style="font-weight: 600;">Growth 🚀</span>
+            </div>
+
+            <div class="tag-item"
+                style="background: #ADD8E6; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span style="font-weight: 600;">Spotlight 🎯</span>
+            </div>
+
+            <div class="tag-item"
+                style="background: #DDA0DD; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span style="font-weight: 600;">Operations ⚙️</span>
+            </div>
+
         </div>
-        
-        <div class="row" style="margin-top: 60px; display: flex; justify-content: center;">
+
+        <div class="row" style="margin-top: 40px; display: flex; justify-content: center;">
             <div class="d-flex flex-wrap" style="gap: 25px;">
                 <!-- Card 2 -->
-                <div class="card" 
-     style="width: 18rem; background: white; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); padding: 15px; transition: transform 0.3s;" 
-     *ngFor="let tagDetails of tagesInfo" 
-     onmouseover="this.style.transform='scale(1.05)'" 
-     onmouseout="this.style.transform='scale(1)'">
+                <div class="card"
+                    style="width: 18rem; background: white; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); padding: 15px; transition: transform 0.3s;"
+                    *ngFor="let tagDetails of tagesInfo" onmouseover="this.style.transform='scale(1.05)'"
+                    onmouseout="this.style.transform='scale(1)'">
 
-    <div class="card-body">
-        <!-- Tag Title and Checkbox in the Same Line -->
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-            <h5 class="today-s-sale" style="color: #007bff; font-weight: bold; margin: 0; font-size: 12;">{{tagDetails.title}}</h5>
-            <input class="form-check-input growth" type="checkbox" style="margin-left: 10px;">
+                    <div class="card-body">
+                        <!-- Tag Title and Checkbox in the Same Line -->
+                        <div
+                            style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                            <h5 class="today-s-sale"
+                                style="color: black; font-weight: bold; margin: 0; font-size: 12px;">
+                                {{tagDetails.title}}</h5>
+                            <input class="form-check-input growth" type="checkbox" style="margin-left: 10px;">
+                        </div>
+
+                        <div class="_12-426" style="color: #666;">
+                            <span style=" font-size: 23px; padding-top:10px; color: #4472C4;">
+                                {{tagDetails.count}}</span>
+
+                        </div>
+                    </div>
+
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Engagement'"
+                        style="background: #dcfce7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; margin-left: 100px; width: 61%;">
+                        <span style="font-weight: 600;">Engagement 🔗</span>
+                    </div>
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Connections'" style="background: #fbcfe8; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 60%;
+    margin-left: 96px;">
+                        <span>Connections 🤝</span>
+                    </div>
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Growth'" style="background: #7FFFD4; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 46%;
+    margin-left: 136px;">
+                        <span style="font-weight: 600;">Growth 🚀</span>
+                    </div>
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Spotlight'" style="background: #ADD8E6; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 51%;
+    margin-left: 120px;">
+                        <span style="font-weight: 600;">Spotlight 🎯</span>
+                    </div>
+
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Operations'" style="background: #DDA0DD; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 56%;
+    margin-left: 111px;">
+                        <span style="font-weight: 600;">Operations ⚙️</span>
+                    </div>
+
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Payments'" style="background: #fef3c7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 50%;
+    margin-left: 120px;">
+                        <span>Payments 💲</span>
+                    </div>
+
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Deals'"
+                        style="background: #e0f2fe; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; margin-left: 150px; width: 40%;">
+                        <span style="font-weight: 600;">Deals 🏆</span>
+                    </div>
+
+                </div>
+            </div>
         </div>
+        <div class="row" style="margin-top: 40px; display: flex; justify-content: center;">
+            <div class="d-flex flex-wrap" style="gap: 25px;">
+                <!-- Card 2 -->
+                <div class="card"
+                    style="width: 18rem; background: white; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); padding: 15px; transition: transform 0.3s;"
+                    *ngFor="let tagDetails of tagesInfo2" onmouseover="this.style.transform='scale(1.05)'"
+                    onmouseout="this.style.transform='scale(1)'">
 
-        <p class="_12-426" style="color: #666; font-size: 20px;">{{tagDetails.count}}</p>
-    </div>
+                    <div class="card-body">
+                        <!-- Tag Title and Checkbox in the Same Line -->
+                        <div
+                            style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                            <h5 class="today-s-sale"
+                                style="color: black; font-weight: bold; margin: 0; font-size: 12px;">
+                                {{tagDetails.title}}</h5>
+                            <input class="form-check-input growth" type="checkbox" style="margin-left: 10px;">
+                        </div>
 
-    <div class="growth" style="background: #f3f4f6; width: 120px; padding: 8px; border-radius: 5px; text-align: center;">
-        <div class="_36" style="color: #3d3894; font-weight: 600; margin-left: 10px;">{{tagDetails.tagName}}</div>
-    </div>
+                        <p class="_12-426" style="color: #666;">
+                            <span style=" font-size: 23px; padding-top:10px">
+                                {{tagDetails.count}}</span>
+                        </p>
+                    </div>
+
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Engagement'"
+                        style="background: #dcfce7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; margin-left: 100px; width: 61%;">
+                        <span style="font-weight: 600;">Engagement 🔗</span>
+                    </div>
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Connections'" style="background: #fbcfe8; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 60%;
+    margin-left: 96px;">
+                        <span>Connections 🤝</span>
+                    </div>
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Growth'" style="background: #7FFFD4; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 46%;
+    margin-left: 136px;">
+                        <span style="font-weight: 600;">Growth 🚀</span>
+                    </div>
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Spotlight'" style="background: #ADD8E6; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 51%;
+    margin-left: 120px;">
+                        <span style="font-weight: 600;">Spotlight 🎯</span>
+                    </div>
+
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Operations'" style="background: #DDA0DD; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 56%;
+    margin-left: 111px;">
+                        <span style="font-weight: 600;">Operations ⚙️</span>
+                    </div>
+
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Payments'" style="background: #fef3c7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; width: 50%;
+    margin-left: 120px;">
+                        <span>Payments 💲</span>
+                    </div>
+
+                    <div class="growth" *ngIf="tagDetails.tagName === 'Deals'"
+                        style="background: #e0f2fe; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; margin-left: 150px; width: 40%;">
+                        <span style="font-weight: 600;">Deals 🏆</span>
+                    </div>
 
                 </div>
             </div>
@@ -175,6 +227,7 @@
         </div>
         <div class="button-background"></div>
         <img class="arrow-icon" src="../../assets/arrow-icon0.svg" />
-        <div class="choose-language" style="cursor: pointer;" (click)="chooseLanguage()">Choose language</div>
+        <div class="choose-language" style="cursor: pointer; left: 1195px;    top: 1161px;" (click)="chooseLanguage()">
+            Choose language</div>
     </div>
 </div>

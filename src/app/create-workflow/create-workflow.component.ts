@@ -103,12 +103,12 @@ export class CreateWorkflowComponent implements OnInit {
       this.templateService.selectedPage = 'send';
     }
     else if (this.buttonText === 'send') {
-      this.router.navigateByUrl('/');
+      this.router.navigateByUrl('');
       this.templateService.selectedPage = 'client-Search';
     }
     else {
-      this.buttonText = this.selectedIndex === 6 ? 'Theme' : this.buttonText;
-      if (this.selectedIndex !== 7) {
+      this.buttonText = this.selectedIndex === 5 ? 'Theme' : this.buttonText;
+      if (this.selectedIndex !== 6) {
         this.selectedIndex += 1;
       }
     }
