@@ -1,140 +1,27 @@
-<!-- <div style="background-image: url('../../assets/background.jpg'); height: 900px;">
-    <app-header></app-header>
-    <div class="container mt-4">
-
-        <h3 class="mt-3">Search Clients</h3>
-        <div class="form-group position-relative mb-4">
-            <input type="text" class="form-control w-50" placeholder="Search by client name"
-                [value]="selectedClient?.name" (input)="onSearch()" #searchInput />
-            <div *ngIf="filteredClients.length > 0" class="dropdown-menu show">
-                <a *ngFor="let client of filteredClients" class="dropdown-item" href="#"
-                    (click)="onClientSelect(client)">
-                    {{ client.name }}
-                </a>
-            </div>
-        </div>
-        <div *ngIf="selectedClient && selectedClient.id">
-            <h5>Client Details</h5>
-            <div class="row">
-                
-                <div class="col-md-2 ">
-                    <label for="name" class="form-label">Client Name: </label>
-                </div>
-                <div class="col-md-3 ">
-                    <label for="name" class="form-label">{{selectedClient.name}}</label>
-                </div>
-            </div>
-            <div class="row">
-                
-                <div class="col-md-2 ">
-                    <label for="name" class="form-label">Country Name: </label>
-                </div>
-                <div class="col-md-3 ">
-                    <label for="name" class="form-label">{{selectedClient.country}}</label>
-                </div>
-            </div>
-            <div class="row">
-                
-                <div class="col-md-2 ">
-                    <label for="name" class="form-label">Industry Name: </label>
-                </div>
-                <div class="col-md-3 ">
-                    <label for="name" class="form-label">{{selectedClient.industry}}</label>
-                </div>
-            </div>
-            <div class="row">
-                
-                <div class="col-md-2 ">
-                    <label for="name" class="form-label">Template Option: </label>
-                </div>
-            </div>
-            <div class="row">
-                
-                <div class="col-md-3 mb-3">
-                    <div class="card" style="height: 150px; background-image: url('../assets/template-1.webp');">
-                        <div class="card-body">
-                            <div class="text-center">
-                                <input class="form-check-input" type="radio" name="itemSelect" id="item1" value="item1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="col-md-3 mb-3">
-                    <div class="card" style="height: 150px; background-image: url('../assets/template-2.jpg');">
-                        <div class="card-body">
-                            <div class="text-center">
-                                <input class="form-check-input" type="radio" name="itemSelect" id="item2" value="item2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="col-md-3 mb-3">
-                    <div class="card" style="height: 150px; background-image: url('../assets/template-1.webp');">
-                        <div class="card-body">
-                            <div class="text-center">
-                                <input class="form-check-input" type="radio" name="itemSelect" id="item3" value="item3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card" style="height: 150px; background-image: url('../assets/template-2.jpg');">
-                        <div class="card-body">
-                            <div class="text-center">
-                                <input class="form-check-input text-center" type="radio" name="itemSelect" id="item3"
-                                    value="item3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                
-                <div class="col-md-2 ">
-                    <label for="name" class="form-label">KPI: </label>
-                </div>
-                <div class="col-md-3 ">
-                    <label for="name" class="form-label">Industry Name</label>
-                </div>
-            </div>
-            
-            <button class="btn btn-primary" (click)="openModalWithComponent()">
-                Preview
-            </button>
-        </div>
-    </div>
-
-    
-</div>  -->
 <!-- <app-header></app-header> -->
-<div class="mac-book-air-3" style="background-image: url('../../assets/background.jpg'); background-size: cover;">
+<div class="mac-book-air-3" style="background-image: url('../../assets/newbg.jpg'); background-size: cover;">
     <app-header></app-header>
-    <h3 style="margin-left:100px">Search Clients</h3>
-    <div style="margin-left:100px">
-
+    <h3 style="margin-left:112px; margin-top: 20px;">Search Clients</h3>
+    <div style="margin-left:112px">
+        <div class="search-container">
         <input type="text" class="form-control w-50" placeholder="Search by client name" [value]="selectedClient?.name"
-            (input)="onSearch()" #searchInput />
+            (input)="onSearch()" #searchInput /> </div>
         <div *ngIf="filteredClients.length > 0" class="dropdown-menu show">
             <a *ngFor="let client of filteredClients" class="dropdown-item" (click)="onClientSelect(client)">
                 {{ client.name }}
             </a>
+
         </div>
     </div>
 
-    <div *ngIf="selectedClient && selectedClient.id && !isChooseLanguage" style="margin-left: 100px;margin-top: 25px;">
-        <h5>Client Details</h5>
-        <div class="row">
-            <div class="col-md-2 ">
+    <div *ngIf="selectedClient && selectedClient.id && !isChooseLanguage" style="margin-left: 112px;margin-top: 25px;">
+        <!-- <h5 style=" font-size: 20px; font-weight: bold; color: #333; margin-bottom: 15px; border-bottom: 2px solid #c9e2fc; padding-bottom: 5px;">Client Details</h5>
+        <div class="row" style="margin-bottom: 10px; display: flex; align-items: center;">
+            <div class="col-md-2 " style="font-weight: bold; color: #555;">
                 <label for="name" class="form-label">Client Name: </label>
             </div>
-            <div class="col-md-3 ">
-                <label for="name" class="form-label">{{selectedClient.name}}</label>
+            <div class="col-md-3 " style= " background: #f8f9fa ; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
+                <label for="name" class="form-label" style="color: #007bff; font-weight: 600;">{{selectedClient.name}}</label>
             </div>
         </div>
         <div class="row">
@@ -153,9 +40,39 @@
             <div class="col-md-3 ">
                 <label for="name" class="form-label">{{selectedClient.industry}}</label>
             </div>
+        </div> -->
+        <h5 style="font-size: 20px; font-weight: bold; color: #333; margin-bottom: 15px; padding-bottom: 5px;">
+            Client Details
+        </h5>
+        
+        <div class="row" style="margin-bottom: 10px; display: flex; align-items: center;">
+            <div class="col-md-2" style="font-weight: bold; color: #555;">
+                <label for="name" class="form-label">Client Name: </label>
+            </div>
+            <div class="col-md-3" style="background: #f8f9fa; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
+                <label for="name" class="form-label" style="color: #007bff; font-weight: 600;">{{selectedClient.name}}</label>
+            </div>
         </div>
-
-        <div class="row">
+        
+        <div class="row" style="margin-bottom: 10px; display: flex; align-items: center;">
+            <div class="col-md-2" style="font-weight: bold; color: #555;">
+                <label for="name" class="form-label">Country Name: </label>
+            </div>
+            <div class="col-md-3" style="background: #f8f9fa; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
+                <label for="name" class="form-label" style="color: #007bff; font-weight: 600;">{{selectedClient.country}}</label>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-bottom: 10px; display: flex; align-items: center;">
+            <div class="col-md-2" style="font-weight: bold; color: #555;">
+                <label for="name" class="form-label">Industry Name: </label>
+            </div>
+            <div class="col-md-3" style="background: #f8f9fa; padding: 8px 12px; border-radius: 5px; border: 1px solid #ddd;">
+                <label for="name" class="form-label" style="color: #007bff; font-weight: 600;">{{selectedClient.industry}}</label>
+            </div>
+        </div>
+        
+        <!-- <div class="row" style="margin-left: 112px;">
             <div class="text">Tags</div>
             <div class="tag-button">
                 <div class="frame-1">
@@ -186,7 +103,7 @@
 
         <div class="row" style="margin-top: 113px;">
             <div class="d-flex flex-wrap">
-                <!-- Card 2 -->
+                card 2
                 <div class="card" style="width: 18rem; margin-right: 25px;" *ngFor="let tagDetails of tagesInfo">
                     <div class="card-body">
                         <h5 class="today-s-sale">{{tagDetails.title}}</h5>
@@ -198,9 +115,59 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="tags-section" style="position: relative; margin-top: 80px; width: 1220px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 16px; font-weight: bold; color: #333; padding: 15px 20px; background: #fff; border-radius: 12px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+
+            <div class="tags-title" style="margin-right: 15px; white-space: nowrap;">Tags</div>
+        
+            <div class="tag-item" style="background: #f1f5f9; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+                <span>All</span>
+            </div>
+        
+            <div class="tag-item" style="background: #e0f2fe; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span style="color: blue; font-weight: 600;">Deals</span>
+            </div>
+        
+            <div class="tag-item" style="background: #dcfce7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span style="color: #22c55e; font-weight: 600;">Engagement</span>
+            </div>
+        
+            <div class="tag-item" style="background: #fef3c7; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span>Tags 3</span>
+            </div>
+        
+            <div class="tag-item" style="background: #fbcfe8; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center;">
+                <span>Tags 4</span>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-top: 60px; display: flex; justify-content: center;">
+            <div class="d-flex flex-wrap" style="gap: 25px;">
+                <!-- Card 2 -->
+                <div class="card" 
+     style="width: 18rem; background: white; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); padding: 15px; transition: transform 0.3s;" 
+     *ngFor="let tagDetails of tagesInfo" 
+     onmouseover="this.style.transform='scale(1.05)'" 
+     onmouseout="this.style.transform='scale(1)'">
+
+    <div class="card-body">
+        <!-- Tag Title and Checkbox in the Same Line -->
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+            <h5 class="today-s-sale" style="color: #007bff; font-weight: bold; margin: 0; font-size: 12;">{{tagDetails.title}}</h5>
+            <input class="form-check-input growth" type="checkbox" style="margin-left: 10px;">
         </div>
 
+        <p class="_12-426" style="color: #666; font-size: 20px;">{{tagDetails.count}}</p>
+    </div>
 
+    <div class="growth" style="background: #f3f4f6; width: 120px; padding: 8px; border-radius: 5px; text-align: center;">
+        <div class="_36" style="color: #3d3894; font-weight: 600; margin-left: 10px;">{{tagDetails.tagName}}</div>
+    </div>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
         <div class="primary-button-with-icon-left">
             <div class="frame-12">
                 <div class="button-name4">Cancel</div>

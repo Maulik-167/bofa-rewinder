@@ -194,6 +194,14 @@
     left: 109px;
     top: 173px;
     cursor: pointer;
+    border-radius: 12px; // Adjust for more or less curve
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); // Soft shadow
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; // Smooth transition
+
+    &:hover {
+        transform: scale(1.05); // Increases size by 5%
+        box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); // More shadow on hover
+    }
 }
 
 .rectangle-69 {
@@ -204,6 +212,14 @@
     left: 424.04px;
     top: 173px;
     cursor: pointer;
+    border-radius: 12px; // Adjust for more or less curve
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); // Soft shadow
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; // Smooth transition
+
+    &:hover {
+        transform: scale(1.05); // Increases size by 5%
+        box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); // More shadow on hover
+    }
 }
 
 .hugeicons-view {
@@ -235,6 +251,14 @@
     left: 739.09px;
     top: 173px;
     cursor: pointer;
+    border-radius: 12px; // Adjust for more or less curve
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); // Soft shadow
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; // Smooth transition
+
+    &:hover {
+        transform: scale(1.05); // Increases size by 5%
+        box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); // More shadow on hover
+    }
 }
 
 .rectangle-71 {
@@ -245,6 +269,14 @@
     left: 1054.13px;
     top: 173px;
     cursor: pointer;
+    border-radius: 12px; // Adjust for more or less curve
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); // Soft shadow
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; // Smooth transition
+
+    &:hover {
+        transform: scale(1.05); // Increases size by 5%
+        box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); // More shadow on hover
+    }
 }
 
 .new {
