@@ -57,7 +57,7 @@
     <div class="member7 pointer w-300" [ngClass]="{'active': selectedIndex === 6}" (click)="selectedIndex = 6"
         *ngIf="selectedIndex !== 8 && selectedIndex !== 9">
         <div class="name" style="display: contents;">
-            <div class="full-name">Closing 1</div>
+            <div class="full-name">Looking Ahead</div>
             <img class="close-icon8" src="assets/close-Icon.svg" />
         </div>
     </div>
@@ -185,7 +185,7 @@
         <form style="border-radius: 4px;
         padding: 16px;
         display: flex
-    ;
+        ;
         flex-direction: column;
         gap: 12px;
         align-items: flex-start;
@@ -400,7 +400,7 @@
                     <!-- <video src="http://localhost:4200/assets/Rewinder.mov" type="vider/mp4">
                     </video> -->
 
-                    <video controls #videoPlayer>
+                    <video controls #videoPlayer width="640" height="600">
                         <source src="{{videoSource}}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
